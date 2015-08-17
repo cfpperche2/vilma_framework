@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+# CATKIN
+.catkin_workspace
+build
+devel
