@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>vilma_meta_pkg</name>
+  <version>0.0.1</version>
+  <description>This stack contains all software necessary to build systems using both Orocos and ROS infrastructures, for VILMA Framework</description>
+  <maintainer email="cfpperche@gmail.com">cfpperche</maintainer>
+
+  <license>MIT</license>
+  
+  <url type="website">http://www.fem.unicamp.br/~lma</url>
+  <url type="bugtracker">https://github.com/cfpperche/vilma_framework/issues</url>
+
+  <author>Carlos Felipe de Paiva Perche</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- <run_depend>rtt_vilma_supervisory</run_depend> -->
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
