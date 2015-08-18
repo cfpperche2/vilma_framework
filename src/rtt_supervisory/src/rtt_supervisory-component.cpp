@@ -3,11 +3,11 @@
 * Author: Carlos Felipe de Paiva Perche 
 */
 
-#include "rtt_supervisory.hpp"
+#include "rtt_supervisory-component.hpp"
 #include <rtt/Component.hpp>
 #include <iostream>
 
-namespace vilma_supv {
+namespace VILMA {
 	
 	using namespace RTT;
 	using namespace std;
@@ -28,6 +28,8 @@ namespace vilma_supv {
 
 	void VilmaSupv::updateHook(){
 	  	std::cout << "VilmaSupv executes updateHook !" <<std::endl;
+	  	this->cleanup();
+
 	}
 
 	bool VilmaSupv::breakUpdateHook(){
@@ -41,14 +43,17 @@ namespace vilma_supv {
 
 	void VilmaSupv::cleanupHook() {
 	  	std::cout << "VilmaSupv cleaning up !" <<std::endl;
+	  	this->stop();
 	}
 
 	void VilmaSupv::errorHook() {
 	  	std::cout << "VilmaSupv errorHook up !" <<std::endl;
+	  	this->recover();
 	}
 
 	void VilmaSupv::exceptionHook() {
 	  	std::cout << "VilmaSupv exceptionHook up !" <<std::endl;
+	  	this->recover();
 	}
 
 } // end namespace
@@ -65,4 +70,4 @@ namespace vilma_supv {
  * If you have put your component class
  * in a namespace, don't forget to add it here too:
  */
-ORO_CREATE_COMPONENT(vilma_supv::VilmaSupv)
+ORO_CREATE_COMPONENT(VILMA::VilmaSupv)

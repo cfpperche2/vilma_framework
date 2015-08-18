@@ -1,0 +1,79 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.8.0' compiled with GCC 4.8.4. Running in Xenomai.
+0.001 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.001 [ Info   ][Logger] Reference System Time is : 24473993771800 ticks ( 8720.09 seconds ).
+0.001 [ Info   ][Logger] Logging is relative to this time.
+0.001 [ Warning][Logger] 'MainThread' name was already in use. Registered empty name with Xenomai.
+
+0.002 [ Info   ][Logger] Xenomai Periodic Timer runs in preemptive 'one-shot' mode.
+0.002 [ Info   ][Logger] Installing SIGXCPU handler.
+0.003 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/vilma/vilma_framework/devel/lib/orocos:/home/vilma/ws/underlay/devel/lib/orocos:/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/indigo/lib/orocos . Searching in: /home/vilma/vilma_framework/devel/lib/orocos:/home/vilma/ws/underlay/devel/lib/orocos:/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/indigo/lib/orocos
+0.004 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.006 [ Info   ][Logger] Loading plugin libraries from directory /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/./plugins ...
+0.006 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.007 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.007 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.008 [ Info   ][Logger] Loading typekit libraries from directory /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/./types ...
+0.015 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.015 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.075 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.075 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.076 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.076 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.076 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/vilma/vilma_framework/devel/lib/orocos:/home/vilma/ws/underlay/devel/lib/orocos:/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/indigo/lib/orocos . Searching in: /home/vilma/vilma_framework/devel/lib/orocos:/home/vilma/ws/underlay/devel/lib/orocos:/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/indigo/lib/orocos
+0.076 [ Info   ][Logger] OCL factory set for real-time logging
+0.076 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.077 [ Info   ][Deployer1] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.083 [ Info   ][Logger] No site file was found. Importing 'ocl' by default.
+0.084 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl ...
+0.106 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/liborocos-ocl-logging-xenomai.so'
+0.167 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-netcdf-xenomai.so'
+0.167 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::NetcdfReporting'
+0.170 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::LuaComponent'
+0.226 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.242 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/liborocos-ocl-timer-xenomai.so'
+0.252 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::LuaTLSFComponent'
+0.265 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/liborocos-ocl-common-xenomai.so'
+0.266 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-xenomai.so'
+0.279 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::HelloWorld'
+0.279 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/types ...
+0.289 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.289 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.289 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/ocl/plugins ...
+0.302 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'os' from 'os'
+0.305 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'Lua' from 'rttlua-plugin'
+0.306 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'print' from 'print'
+0.317 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'LuaTLSF' from 'rttlua-tlsf-plugin'
+0.317 [ Info   ][Logger] Loading Service or Plugin scripting in TaskContext Deployer
+0.334 [ Info   ][Logger] Found complete interface of requested service 'scripting'
+0.334 [ Info   ][Logger] Running Script src/test.ops ...
+0.334 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+0.335 [ Info   ][GlobalEngine1] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.337 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)] No such package or directory found in search path: vilma_supv. Search path is: /home/vilma/vilma_framework/devel/lib/orocos:/home/vilma/ws/underlay/devel/lib/orocos:/home/vilma/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/indigo/lib/orocos:.
+0.337 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)] Directories searched include the following: 
+0.337 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/vilma_framework/devel/lib/orocos/vilma_supv
+0.338 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/vilma_framework/devel/lib/orocos/xenomai/vilma_supv
+0.338 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/ws/underlay/devel/lib/orocos/vilma_supv
+0.338 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/ws/underlay/devel/lib/orocos/xenomai/vilma_supv
+0.339 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/vilma_supv
+0.339 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/vilma/ws/underlay_isolated/install_isolated/lib/orocos/xenomai/vilma_supv
+0.339 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /opt/ros/indigo/lib/orocos/vilma_supv
+0.340 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /opt/ros/indigo/lib/orocos/xenomai/vilma_supv
+0.340 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - ./vilma_supv
+0.341 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - ./xenomai/vilma_supv
+0.342 [ ERROR  ][loadComponent] Unable to create Orocos Component 'vilma_supv::VilmaSupv': unknown component type.
+0.343 [ ERROR  ][ScriptingService] src/test.ops :Parse error at line 3: Service or Task "Deployer" has no Peer or Service supv (or Deployer was not found at all).
+0.344 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='TaskBrowser'
+0.345 [ Info   ][TaskBrowser1] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.347 [ Info   ][Logger] Entering Task Deployer
+52.358 [ Info   ][Logger] Ignoring deployment shutdown function due to missing peer.
+52.361 [ Info   ][stopComponentsGroup] Stopping group 0
+52.362 [ Info   ][cleanupComponentsGroup] Cleaning up group 0
+52.362 [ Info   ][Logger] Unloading group 0
+52.362 [ Info   ][Logger] Kick-out of group 0 successful.
+52.367 [ Info   ][Logger] Orocos Logging Deactivated.

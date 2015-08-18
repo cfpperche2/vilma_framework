@@ -3,7 +3,7 @@
 
 #include <rtt/RTT.hpp>
 
-namespace vilma_supv {
+namespace VILMA {
 
 	class VilmaSupv : public RTT::TaskContext {
 	public:

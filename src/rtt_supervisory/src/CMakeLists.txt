@@ -10,7 +10,7 @@
 # and installs in the directory lib/orocos/rtt_supervisory/
 #
 # -------------------------------------------
-orocos_component(rtt_supervisory rtt_supervisory.hpp rtt_supervisory.cpp) # ...you may add multiple source files
+orocos_component(rtt_supervisory rtt_supervisory-component.hpp rtt_supervisory-component.cpp) # ...you may add multiple source files
 # -------------------------------------------
 #
 # You may add multiple orocos_component statements.
@@ -21,7 +21,7 @@ orocos_component(rtt_supervisory rtt_supervisory.hpp rtt_supervisory.cpp) # ...y
 # Installs in the include/orocos/rtt_supervisory/ directory
 #
 # -------------------------------------------
-orocos_install_headers(rtt_supervisory.hpp) # ...you may add multiple header files
+orocos_install_headers(rtt_supervisory-component.hpp) # ...you may add multiple header files
 # -------------------------------------------
 #
 # You may add multiple orocos_install_headers statements.

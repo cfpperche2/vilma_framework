@@ -31,3 +31,7 @@
 .catkin_workspace
 build
 devel
+
+# OROCOS
+.tb_history
+orocos.log
