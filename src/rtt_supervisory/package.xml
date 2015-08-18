@@ -1,21 +1,40 @@
+<?xml version="1.0"?>
 <package>
-  <name>rtt_supervisory</name>
-  <version>1.0.0</version>
+  <name>vilma_meta_pkg</name>
+  <version>0.0.1</version>
   <description>This package contains the components of the rtt_supervisory package</description>
-  <maintainer email="unknown@maintainer.com">Unknown Author</maintainer>
+  <maintainer email="cfpperche@gmail.com">cfpperche</maintainer>
 
-  <license>Unknown</license>
+  <license>MIT</license>
+  
+  <url type="website">http://www.fem.unicamp.br/~lma</url>
+  <url type="bugtracker">https://github.com/cfpperche/vilma_framework/issues</url>
 
-  <url type="website"></url>
-  <!-- <url type="bugtracker"></url> -->
+  <author>Carlos Felipe de Paiva Perche</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
 
-  <author>Unknown Author</author>
-
+  <!-- Build deps are queried automatically with orocos_use_package() -->
   <build_depend>rtt</build_depend>
   <build_depend>orogen</build_depend>
+  <build_depend>ocl</build_depend>
+  <build_depend>rtt_ros</build_depend>
+
   <run_depend>rtt</run_depend>
+  <run_depend>ocl</run_depend>
+  <run_depend>rtt_ros</run_depend>
+
+  <!-- ROS Msg Typekits and Srv Proxies -->
+  <!-- <build_depend>rtt_sensor_msgs</build_depend> -->
+  <!-- <run_depend>rtt_sensor_msgs</run_depend> -->
 
   <export>
-
+    <rtt_ros>
+      <!-- <plugin_depend>rtt_rosnode</plugin_depend> -->
+      <!-- <plugin_depend>rtt_roscomm</plugin_depend> -->
+      <!-- <plugin_depend>rtt_rosparam</plugin_depend> -->
+      <!-- <plugin_depend>rtt_std_msgs</plugin_depend> -->
+      <!-- <plugin_depend>rtt_std_srvs</plugin_depend> -->
+    </rtt_ros>
   </export>
 </package>
