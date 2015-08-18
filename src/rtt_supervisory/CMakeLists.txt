@@ -107,9 +107,10 @@ add_subdirectory( src )
 # that it can pick up all above settings.
 #
 # Export package information (replaces catkin_package() macro) 
+
 orocos_generate_package(
-  # INCLUDE_DIRS include
-  # DEPENDS rtt_ros
+  INCLUDE_DIRS include
+  DEPENDS rtt_ros
 )
 
 #############

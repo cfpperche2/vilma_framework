@@ -1,0 +1,4 @@
+import("vilma_supv")
+loadComponent("supv","vilma_supv::VilmaSupv")
+supv.configure()
+supv.start()

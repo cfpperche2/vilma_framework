@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>vilma_meta_pkg</name>
+  <name>rtt_supervisory</name>
   <version>0.0.1</version>
   <description>This package contains the components of the rtt_supervisory package</description>
   <maintainer email="cfpperche@gmail.com">cfpperche</maintainer>

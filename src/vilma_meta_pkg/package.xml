@@ -14,7 +14,7 @@
   
   <buildtool_depend>catkin</buildtool_depend>
 
-  <!-- <run_depend>rtt_vilma_supervisory</run_depend> -->
+  <run_depend>rtt_supervisory</run_depend>
 
   <export>
     <metapackage/>
