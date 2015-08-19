@@ -5,6 +5,8 @@
 
 #include "rtt_supervisory-component.hpp"
 #include <rtt/Component.hpp>
+#include <rtt/Attribute.hpp>
+#include <rtt/Property.hpp>
 #include <iostream>
 
 namespace VILMA {
@@ -12,8 +14,20 @@ namespace VILMA {
 	using namespace RTT;
 	using namespace std;
 	// param PreOperational demand configure() call.
-	VilmaSupv::VilmaSupv(const std::string& name) : TaskContext(name, PreOperational){
+	VilmaSupv::VilmaSupv(const std::string& name) : TaskContext(name, PreOperational),
+		param("The String"),
+    	value( 1.23 ),
+        aflag(false), max(5), pi(3.14) {
 		std::cout << "VilmaSupv constructed !" <<std::endl;
+
+		// attributes and constants don't take a .doc() description.
+       this->addAttribute( "aflag", aflag );
+       this->addAttribute( "max", max );
+      
+       this->addConstant( "pi", pi );
+
+       this->addProperty( "Param", param ).doc("Param Description");
+       this->addProperty( "Palue", value ).doc("Value Description");
 	}
 
 	bool VilmaSupv::configureHook(){
@@ -28,8 +42,6 @@ namespace VILMA {
 
 	void VilmaSupv::updateHook(){
 	  	std::cout << "VilmaSupv executes updateHook !" <<std::endl;
-	  	this->cleanup();
-
 	}
 
 	bool VilmaSupv::breakUpdateHook(){
@@ -43,17 +55,14 @@ namespace VILMA {
 
 	void VilmaSupv::cleanupHook() {
 	  	std::cout << "VilmaSupv cleaning up !" <<std::endl;
-	  	this->stop();
 	}
 
 	void VilmaSupv::errorHook() {
 	  	std::cout << "VilmaSupv errorHook up !" <<std::endl;
-	  	this->recover();
 	}
 
 	void VilmaSupv::exceptionHook() {
 	  	std::cout << "VilmaSupv exceptionHook up !" <<std::endl;
-	  	this->recover();
 	}
 
 } // end namespace

@@ -6,6 +6,14 @@
 namespace VILMA {
 
 	class VilmaSupv : public RTT::TaskContext {
+    // we will expose these:
+    bool aflag;
+    int max;
+
+    double pi;
+
+    std::string param;
+    double value;
 	public:
 		VilmaSupv(std::string const& name);
    		/**
