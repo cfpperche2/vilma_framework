@@ -99,7 +99,7 @@ namespace VILMA {
     		* This allows you to specify the last actions in an erroneous component, after stopHook() and cleanupHook() 
     		* were called.
        */
-       virtual void exceptionHook();
+       void exceptionHook();
         // {
         // ...
         // }

@@ -7,6 +7,3 @@ displayComponentTypes()
 
 loadComponent("supv","VILMA::VilmaSupv")
 print.ln("Script created supv Component with period: " + supv.getPeriod() )
-
-supv.configure()
-supv.start()

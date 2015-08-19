@@ -13,7 +13,7 @@ namespace VILMA {
 	
 	using namespace RTT;
 	using namespace std;
-	// param PreOperational demand configure() call.
+	// param PreOperational demand configure() call, before call start().
 	VilmaSupv::VilmaSupv(const std::string& name) : TaskContext(name, PreOperational),
 		param("The String"),
     	value( 1.23 ),

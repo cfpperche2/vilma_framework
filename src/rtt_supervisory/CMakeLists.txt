@@ -103,6 +103,11 @@ add_subdirectory( src )
 #  DEPENDS system_lib
 #)
 
+catkin_package(
+  INCLUDE_DIRS include/
+  CATKIN_DEPENDS rtt_ros
+)
+
 # Generates and installs our package. Must be the last statement such
 # that it can pick up all above settings.
 #
@@ -110,7 +115,8 @@ add_subdirectory( src )
 
 orocos_generate_package(
   INCLUDE_DIRS include
-  DEPENDS rtt_ros
+  DEPENDS 
+  DEPENDS_TARGETS rtt_ros
 )
 
 #############
